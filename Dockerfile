@@ -4,7 +4,7 @@ FROM archlinux:base-devel
 RUN pacman -Syyu --noconfirm 
 
 # Install dev env
-RUN pacman -S neovim zsh git lazygit unzip go neofetch ripgrep llvm clang valgrind --noconfirm 
+RUN pacman -S neovim zsh git lazygit unzip go neofetch ripgrep llvm clang valgrind openssh --noconfirm 
 
 ADD ./entrypoint.sh /entrypoint.sh
 
